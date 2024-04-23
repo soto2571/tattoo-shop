@@ -45,6 +45,8 @@ body {
     flex: 0 0 auto; /* Prevent images from stretching */
     scroll-snap-align: start; /* Align each image to the start of the scroll container */
     margin-right: 10px; /* Add margin between images */
+    width: 150px; /* Set width of each image */
+    height: auto; /* Maintain aspect ratio */
 }
 
 
