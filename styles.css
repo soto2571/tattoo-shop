@@ -31,7 +31,8 @@ body {
     height: auto;
     object-fit: contain;
     border-radius: 10px; 
-    box-shadow: 0 0 20px rgba(252, 252, 252, 1);
+    mask-image: linear-gradient(to top, transparent, black); /* Create a linear gradient mask */
+    -webkit-mask-image: linear-gradient(to top, transparent, black); /* For compatibility with older browsers */
 }
 
 .gallery-scroll {
@@ -109,36 +110,28 @@ body {
 }
 
 /* Style for the contact form */
-form {
-    max-width: 500px; /* Adjust the width as needed */
-    margin: 0 auto;
+
+
+.contact-info {
+    text-align: center;
 }
 
-input[type="text"],
-input[type="email"],
-textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #42e042; /* Border color */
-    border-radius: 20px;
-    box-shadow: 0 0 20px rgba(252, 252, 252, 1);
-}
-
-textarea {
-    height: 150px; /* Adjust the height as needed */
-}
-
-button[type="submit"] {
-    background-color: transparent; /* Transparent background */
-    border: 1px solid #46e65b; /* Border color */
+.contact-item {
+    background-color: rgba(242, 242, 242, 0); /* Fully transparent background */
     border-radius: 5px;
     padding: 10px 20px;
-    color: #ffffff; /* Text color */
-    cursor: pointer;
-    transition: background-color 0.3s ease; /* Smooth transition */
+    margin: 10px 0;
+    display:block;
+    border: 1px solid #ccc;
+    margin-right: 70px;
+    margin-left: 70px;
 }
 
-button[type="submit"]:hover {
-    background-color: #a8a6a6; /* Background color on hover */
+.contact-info a {
+    color: #ffffff;
+    text-decoration:solid;
+}
+
+.contact-info a:hover {
+    text-decoration:underline;
 }
