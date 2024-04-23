@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000; /* White background */
+    color: #ffffff; /* Black text */
+    margin: 0;
+    padding: 0;
+}
+
+/* Add more styles as needed */
+.section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    text-shadow: 5px 5px 4px rgba(255, 253, 253, 0.5);
+}
+
+/* Add more styles as needed */
+.artist-info {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 3vw;
+}
+
+.section-first img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px; 
+    box-shadow: 0 0 20px rgba(252, 252, 252, 1);
+}
+
+/* Add navigation bar styles */
+.navbar {
+    background-color: #333; /* Dark background */
+    overflow: hidden;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    float:left;
+}
+
+.navbar a {
+    display: block;
+    color: white; /* White text */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration:overline;
+}
+
+.navbar a:hover {
+    background-color: #ddd; /* Light background on hover */
+    color: black; /* Black text on hover */
+}
+
+.experiences {
+    display: flex;
+    flex-direction: column;
+}
+
+.experience {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.experience-image {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.experience-image img {
+    max-width: 70%;
+    height: auto;
+}
+
+.experience-comment {
+    flex: 2;
+    font-size: 3vw;
+}
+
+/* Style for the contact form */
+form {
+    max-width: 500px; /* Adjust the width as needed */
+    margin: 0 auto;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #42e042; /* Border color */
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(252, 252, 252, 1);
+}
+
+textarea {
+    height: 150px; /* Adjust the height as needed */
+}
+
+button[type="submit"] {
+    background-color: transparent; /* Transparent background */
+    border: 1px solid #46e65b; /* Border color */
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #ffffff; /* Text color */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+button[type="submit"]:hover {
+    background-color: #a8a6a6; /* Background color on hover */
+}

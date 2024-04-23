@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teo Tattoos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#experiences">Experiences</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+
+    <section class="section-first">
+        <img src="https://preview.redd.it/hbbc0jtox9wc1.png?width=1080&crop=smart&auto=webp&s=3106f6c80ef1afdfaa569250054300778f7606b4" alt="Teo Tattoos">
+    </section>
+
+    <!-- Second section: Artist information -->
+    <section id="about" class="section">
+        <div class="artist-info">
+            <h2>About the Artist</h2>
+            <p>"Meet Matthew Rivera, a young tattoo artist who embarked on his creative journey just under a year ago. However, his passion for art has been ingrained in him since childhood. With a natural talent for drawing that bloomed early on, Matthew's dedication and hard work have transformed him into the remarkable artist he is today. Each stroke of his needle is a testament to his unwavering commitment to his craft. Through his artistry, Matthew seeks to not only create stunning tattoos but also to share his passion and creativity with each of his clients, leaving a lasting impression one design at a time."</p>
+            <!-- Add more artist information here -->
+        </div>
+    </section>
+
+    <!-- Third section: Slideshow of the artist's work -->
+    <section id="gallery" class="section">
+        <h2>Gallery</h2>
+        <div class="slideshow">
+            <!-- Add slideshow here -->
+            <!-- Example: <img src="image1.jpg" alt="Tattoo"> -->
+            <img src="https://preview.redd.it/o9a0ziiz4awc1.jpg?width=640&crop=smart&auto=webp&s=272163002ae97974c3741381899cf91ac9cfb11c" alt="Tattoos">
+            <img src="https://preview.redd.it/2jblyiwe5awc1.png?width=266&format=png&auto=webp&s=488f0ab69fb3f4fd3c5fd83b841bd4e6f661030e" alt="Tattoos">
+            <img src="https://preview.redd.it/g10fw4mf5awc1.png?width=296&amp;format=png&amp;auto=webp&amp;s=8cb14f9fb865e64a7da882b25ca30e757061dce9" alt="Tattoos">
+            <img src="https://preview.redd.it/wo4nksag5awc1.png?width=263&format=png&auto=webp&s=3b7a1451bb9fdb8d18c54397a419308722c40c15" alt="Tattoos">
+            <img src="https://preview.redd.it/ftnlgatg5awc1.png?width=263&format=png&auto=webp&s=4653e705ece9f3d6a1a80eda6a2a6712b10eadff" alt="Tattoos">
+        </div>
+    </section>
+
+    <!-- Fourth section: People's experiences -->
+    <section id="experiences" class="section">
+        <h2>People's Experiences</h2>
+        <div class="experiences">
+            <div class="experience">
+                <div class="experience-image">
+                    <img src="https://educational-innovation.sydney.edu.au/teaching@sydney/wp-content/uploads/2016/09/Rhanyeia-talk-contribs_wikimedia_2007_cc2.0attribution.png">
+                </div>
+                <div class="experience-comment">
+                    <p>"From the beginning, he has been the artist for most of my tattoos, and I feel very grateful for that. Not only does his art make it incredible, but also his service makes it a unique experience that sets him apart from any other." </p>
+                </div>
+            </div>
+
+            <div class="experience">
+                <div class="experience-image">
+                    <img src="https://educational-innovation.sydney.edu.au/teaching@sydney/wp-content/uploads/2016/09/Rhanyeia-talk-contribs_wikimedia_2007_cc2.0attribution.png">
+                </div>
+                <div class="experience-comment">
+                    <p>"It was my first time getting a tattoo, and it was an excellent experience from the treatment to the teaching of tattoo aftercare. His art perfectly conveys his passion."</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Fifth section: Contact form -->
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <form action="contact.php" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
