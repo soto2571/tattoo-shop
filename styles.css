@@ -34,16 +34,19 @@ body {
     box-shadow: 0 0 20px rgba(252, 252, 252, 1);
 }
 
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 10px;
+.gallery-scroll {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    scroll-snap-type: x mandatory; /* Enable snapping to each image */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
 }
 
-.gallery-grid img {
-    max-width: 100%;
-    height: auto;
+.gallery-scroll img {
+    flex: 0 0 auto; /* Prevent images from stretching */
+    scroll-snap-align: start; /* Align each image to the start of the scroll container */
+    margin-right: 10px; /* Add margin between images */
 }
+
 
 
 
