@@ -26,6 +26,7 @@ body {
 }
 
 .section-first img {
+    margin-top: 20px;
     width: 100%;
     height: auto;
     object-fit: contain;
