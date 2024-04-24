@@ -29,21 +29,3 @@ function smoothScroll(e) {
         );
     }
 
-    // Function to toggle visibility class based on scroll position
-    function toggleVisibility() {
-        var content = document.querySelector('.content');
-        if (isInViewport(content)) {
-            content.classList.add('visible');
-            content.classList.remove('hidden');
-        } else {
-            content.classList.add('hidden');
-            content.classList.remove('visible');
-        }
-    }
-
-    // Event listener for scroll events to trigger visibility change
-    window.addEventListener('scroll', toggleVisibility);
-    
-    // Initial check on page load
-    toggleVisibility();
-
