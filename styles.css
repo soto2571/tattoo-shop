@@ -92,46 +92,98 @@ body {
 .experience {
     display: flex;
     margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
 .experience-image {
     flex: 1;
     margin-right: 20px;
+    margin-left: 40px;
 }
 
 .experience-image img {
-    max-width: 70%;
+    max-width: 100%;
     height: auto;
 }
 
 .experience-comment {
     flex: 2;
-    font-size: 3vw;
+    font-size: 2.5vw;
 }
 
-/* Style for the contact form */
+@media screen and (max-width: 768px) {
+    .experience-comment {
+        font-size: 4vw; /* Adjust font size for smaller screens */
+    }
+    .experience-image {
+        margin-left: 20px; /* Adjust image margin for smaller screens */
+        margin-right: 20px;
+    }
+}
 
+/* Media query for larger screens */
+@media screen and (min-width: 1024px) {
+    .experience-comment {
+        font-size: 1.5vw; /* Adjust font size for larger screens */
+    }
+    .experience-image img {
+        max-width: 50%; /* Adjust image size for larger screens */
+    }
+}
 
-.contact-info {
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  .cards .red {
+    background-color: #a8164e31;
+  }
+  
+  .cards .blue {
+    background-color: #11830d33;
+  }
+  
+  .cards .green {
+    background-color: #2c18e231;
+  }
+  
+  .cards .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     text-align: center;
-}
+    height: 100px;
+    width: 250px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 400ms;
+  }
+  
+  .cards .card p.tip {
+    font-size: 1.5em;
+    font-weight: 700;
+  }
+  
+  .cards .card p.second-text {
+    font-size: .7em;
+  }
+  
+  .cards .card:hover {
+    transform: scale(1.1, 1.1);
+  }
+  
+  .cards:hover > .card:not(:hover) {
+    filter: blur(10px);
+    transform: scale(0.9, 0.9);
+  }
 
-.contact-item {
-    background-color: rgba(242, 242, 242, 0); /* Fully transparent background */
-    border-radius: 5px;
-    padding: 10px 20px;
-    margin: 10px 0;
-    display:block;
-    border: 1px solid #ccc;
-    margin-right: 70px;
-    margin-left: 70px;
-}
-
-.contact-info a {
-    color: #ffffff;
-    text-decoration:solid;
-}
-
-.contact-info a:hover {
-    text-decoration:underline;
-}
+  .cards .card a {
+    color: inherit;
+    text-decoration: none;
+  }
