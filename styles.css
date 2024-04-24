@@ -57,8 +57,18 @@ body {
 
 
 .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: #333; /* Dark background */
     overflow: hidden;
+    padding: 10px 20px;
+}
+
+.logo img {
+    max-height: 50px;
+    width:auto;
+    border-radius: 50%;
 }
 
 .navbar ul {
@@ -67,21 +77,23 @@ body {
     padding: 0;
 }
 
-.navbar li {
-    float:left;
+.navbar ul li {
+    display: inline-block;
+    margin-left: 20px; /* Adjust spacing between navigation items */
 }
 
-.navbar a {
-    display: block;
-    color: white; /* White text */
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration:overline;
+.navbar ul li:first-child {
+    margin-left: 0; /* Remove margin for the first navigation item */
 }
 
-.navbar a:hover {
-    background-color: #ddd; /* Light background on hover */
-    color: black; /* Black text on hover */
+.navbar ul li a {
+    color: #fff; /* Example text color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline; /* Example hover effect */
 }
 
 .experiences {
