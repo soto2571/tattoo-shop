@@ -98,6 +98,28 @@ body {
 
 .menu li a:hover {
     text-decoration: underline; /* Example hover effect */
+    text-underline-offset: 1rem;
+}
+
+.artist-pic img {
+    max-width: 80%;
+    max-height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.artist-pic {
+    height: 300px;
+    width: 300px;
+    margin: auto;
+}
+
+#about h3 {
+    margin-top: 2px;
+    text-decoration: solid;
+    color: #b9b9b9;
+    font-size: 48px;
+    text-shadow: 5px 5px 4px rgba(255, 254, 254, 0.247);
 }
 
 /* Media query for mobile responsiveness */
