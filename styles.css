@@ -122,6 +122,14 @@ body {
     text-shadow: 5px 5px 4px rgba(255, 254, 254, 0.247);
 }
 
+#about h2 {
+    margin-bottom: 100px;
+}
+
+#about {
+    margin-top: 200px;
+}
+
 /* Media query for mobile responsiveness */
 @media screen and (max-width: 768px) {
     .menu {
